@@ -1,0 +1,35 @@
+.service-card {
+  height: 300px;
+  width: 50px;
+  background: gray;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #1c2c71;
+}
+
+.service-title {
+  color: #1c2c71;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-list {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+  color: #333;
+}

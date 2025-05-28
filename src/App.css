@@ -1,0 +1,82 @@
+.nav-top-element{
+  background-color: rgb(13, 13, 114);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px 80px 10px 80px;
+  font-size: 15px;
+}
+.nav-top-element .nav-top-element-left{
+  display: flex;
+ 
+  gap: 30px;
+}
+.nav-top-element .nav-top-element-left .mail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.nav-top-element .nav-top-element-left .location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.nav-top-element .nav-top-element-right ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+
+}
+
+/* this is the code for the hover and transiton effect on the top of the navbar  */
+.nav-top-element .nav-top-element-left .mail {
+  transition: color 3s ease;
+  cursor: pointer;
+}
+.nav-top-element .nav-top-element-left .location{
+  transition: color 3s ease;
+  cursor: pointer;
+}
+
+.nav-top-element .nav-top-element-left .mail:hover {
+  color: red;
+}
+.nav-top-element .nav-top-element-left .location:hover {
+  color: red;
+}
+.nav-top-element .nav-top-element-right ul li {
+  transition: color 3s ease;
+  cursor: pointer;
+}
+
+.nav-top-element .nav-top-element-right ul li:hover {
+  color: red;
+}
+
+/* after the transiton and hover effect of the top element of the navbar is code begins here */
+
+
+.services-section{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services-section p{
+  margin-top: 15px;
+  color: orange;
+}
+
+.services{
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin-top: 30px;
+}
