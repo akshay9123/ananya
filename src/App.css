@@ -1,4 +1,4 @@
-.nav-top-element{
+.nav-top-element {
   background-color: rgb(13, 13, 114);
   display: flex;
   justify-content: space-between;
@@ -7,28 +7,27 @@
   padding: 10px 80px 10px 80px;
   font-size: 15px;
 }
-.nav-top-element .nav-top-element-left{
+.nav-top-element .nav-top-element-left {
   display: flex;
- 
+
   gap: 30px;
 }
-.nav-top-element .nav-top-element-left .mail{
+.nav-top-element .nav-top-element-left .mail {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
 }
-.nav-top-element .nav-top-element-left .location{
+.nav-top-element .nav-top-element-left .location {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
 }
-.nav-top-element .nav-top-element-right ul{
+.nav-top-element .nav-top-element-right ul {
   list-style: none;
   display: flex;
   gap: 30px;
-
 }
 
 /* this is the code for the hover and transiton effect on the top of the navbar  */
@@ -36,7 +35,7 @@
   transition: color 3s ease;
   cursor: pointer;
 }
-.nav-top-element .nav-top-element-left .location{
+.nav-top-element .nav-top-element-left .location {
   transition: color 3s ease;
   cursor: pointer;
 }
@@ -60,8 +59,8 @@
 
 /* about section */
 
-.about-section{
-    padding-left: 80px;
+.about-section {
+  padding-left: 80px;
   padding-right: 80px;
   display: flex;
   justify-content: center;
@@ -70,20 +69,19 @@
   margin-top: 30px;
 }
 
-
-.services-section{
+.services-section {
   height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.services-section p{
+.services-section p {
   margin-top: 15px;
   color: orange;
 }
 
-.services{
+.services {
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
@@ -92,23 +90,23 @@
   align-items: center;
   margin-top: 30px;
 }
-.technology-section{
-   display: flex;
+.technology-section {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
 }
-.technology-section p{
-    font-size: 40px;
+.technology-section p {
+  font-size: 40px;
   font-weight: bold;
   color: rgb(13, 13, 114);
 }
-.technology-section span{
+.technology-section span {
   margin-top: 10px;
   color: gray;
 }
-.technology-section .technology{
+.technology-section .technology {
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
@@ -118,21 +116,20 @@
   margin-top: 30px;
 }
 /* blogs section */
-.blogs-section{
+.blogs-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 30px;
 }
-.blogs-section p{
+.blogs-section p {
   font-size: 40px;
   font-weight: bold;
   color: rgb(13, 13, 114);
 }
 
-
-.blogs-section .blogs{
+.blogs-section .blogs {
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
@@ -140,4 +137,117 @@
   gap: 100px;
   align-items: center;
   margin-top: 30px;
+}
+
+
+
+/* Base styles remain unchanged (your original code) */
+
+/* --- Responsive styles --- */
+/* Keep your original styles unchanged above this */
+
+/* --- Tablet View: 769px to 1024px --- */
+@media screen and (max-width: 1024px) {
+  .nav-top-element {
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+
+  .nav-top-element .nav-top-element-left {
+    gap: 20px;
+  }
+
+  .nav-top-element .nav-top-element-right ul {
+    gap: 20px;
+  }
+
+  .about-section,
+  .services,
+  .technology-section .technology,
+  .blogs-section .blogs {
+    gap: 30px;
+    padding: 0 30px;
+  }
+
+  .technology-section p,
+  .blogs-section p {
+    font-size: 30px;
+  }
+}
+
+/* --- Mobile View: ≤768px --- */
+@media screen and (max-width: 768px) {
+
+  /* Navbar top */
+  .nav-top-element {
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* Hide email and location */
+  .nav-top-element .nav-top-element-left {
+    display: none;
+  }
+
+  /* Show nav links (ul) stacked */
+  .nav-top-element .nav-top-element-right ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  /* About Section */
+  .about-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  /* Services Section */
+  .services-section {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /* Technology Section */
+  .technology-section {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .technology-section p {
+    font-size: 28px;
+  }
+
+  .technology-section .technology {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  /* Blogs Section */
+  .blogs-section {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .blogs-section p {
+    font-size: 28px;
+  }
+
+  .blogs-section .blogs {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
 }

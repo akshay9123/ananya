@@ -1,7 +1,8 @@
 .tech-slider {
   display: flex;
-  gap: 100px;
-  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   background-color: #f7f7f7;
   padding: 20px;
   border-radius: 10px;
@@ -9,7 +10,7 @@
 }
 
 .tech-card {
-  flex: 0 0 18%;
+  flex: 0 1 calc(20% - 30px); /* 5 per row on large screens */
   background: white;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,8 +24,9 @@
   height: 60px;
   object-fit: contain;
   margin-bottom: 10px;
-   transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
+
 .tech-card:hover {
   transform: translateY(-5px);
   border-color: red;
@@ -34,9 +36,39 @@
   font-size: 16px;
   font-weight: bold;
   color: #333;
-   transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .tech-card:hover p {
   color: #007acc;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .tech-card {
+    flex: 0 1 calc(25% - 20px); /* 4 per row */
+  }
+}
+
+/* Medium screen (small tablets) */
+@media (max-width: 768px) {
+  .tech-card {
+    flex: 0 1 calc(33.33% - 20px); /* 3 per row */
+  }
+}
+
+/* Small screen (phones) */
+@media (max-width: 480px) {
+  .tech-card {
+    flex: 0 1 calc(50% - 20px); /* 2 per row */
+  }
+
+  .tech-card p {
+    font-size: 14px;
+  }
+
+  .tech-slider {
+    gap: 20px;
+    padding: 15px;
+  }
 }

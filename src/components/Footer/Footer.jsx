@@ -12,7 +12,7 @@ const Footer = () => {
 
                 
 
-                <p>JOB LISTING</p>
+                <p>AANNYA</p>
 
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugit asperiores ducimus, earum incidunt libero veniam! Labore, quam laudantium itaque quas eveniet explicabo impedit error suscipit saepe autem dolores id.</p>
 

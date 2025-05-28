@@ -95,3 +95,148 @@
 
   transform: scale(1.05);
 }
+
+
+/* Core Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.slider-img,
+.blurred-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.blurred-image {
+  filter: blur(5px);
+}
+
+/* Slide Text Centering */
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Text Styling */
+.slider-overlay h2 {
+  font-size: 60px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.slider-overlay h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+/* Buttons Container */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn button {
+  height: 40px;
+  width: 160px;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn button:hover {
+  background-color: red;
+  transform: scale(1.05);
+}
+
+/* Tablet View (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .slider-overlay h2 {
+    font-size: 40px;
+  }
+
+  .slider-overlay h3 {
+    font-size: 18px;
+  }
+
+  .btn {
+    gap: 40px;
+  }
+
+  .btn button {
+    width: 140px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile View (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .slider-overlay h2 {
+    font-size: 28px;
+  }
+
+  .slider-overlay h3 {
+    font-size: 14px;
+  }
+
+  .btn {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn button {
+    width: 100%;
+    max-width: 200px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .prev,
+  .next {
+    font-size: 1.5rem;
+  }
+}
