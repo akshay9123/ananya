@@ -58,6 +58,18 @@
 
 /* after the transiton and hover effect of the top element of the navbar is code begins here */
 
+/* about section */
+
+.about-section{
+    padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin-top: 30px;
+}
+
 
 .services-section{
   height: 80px;
@@ -77,6 +89,55 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+  align-items: center;
+  margin-top: 30px;
+}
+.technology-section{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.technology-section p{
+    font-size: 40px;
+  font-weight: bold;
+  color: rgb(13, 13, 114);
+}
+.technology-section span{
+  margin-top: 10px;
+  color: gray;
+}
+.technology-section .technology{
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+  margin-top: 30px;
+}
+/* blogs section */
+.blogs-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.blogs-section p{
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(13, 13, 114);
+}
+
+
+.blogs-section .blogs{
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
   align-items: center;
   margin-top: 30px;
 }

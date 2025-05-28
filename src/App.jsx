@@ -9,6 +9,13 @@ import ServicesCard from "./components/ServicesCard/ServicesCard";
 import Footer from "./components/Footer/Footer";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5";
+import ImageSlider from "./components/ImageSlider/ImageSlider";
+import Blogs from "./components/Blogs/Blogs";
+import blog1image from '../src/assets/blog1image.jpg'
+import blog2image from '../src/assets/blog2image.jpg'
+import blog3image from '../src/assets/blog3image.jpg'
+import TechSlider from "./components/TechSlider/TechSlider";
+import About from "./components/About/About";
 
 const App = () => {
   return (
@@ -31,6 +38,12 @@ const App = () => {
         </div>
       </div>
       <Navbar />
+
+      <ImageSlider />
+
+      <div className="about-section">
+        <About />
+      </div>
 
       <div className="services-section">
         <h2>Services that are provided by the company</h2>
@@ -82,6 +95,26 @@ const App = () => {
           "Content Writing"
         ]}
       />
+      </div>
+
+      <div className="technology-section">
+        <p>Our Web Technology</p>
+        <span>Technologies we specialize in</span>
+        <div className="technology">
+          <TechSlider />
+        </div>
+      </div>
+
+      <div className="blogs-section">
+
+        <p>Our Blogs</p>
+        <div className="blogs">
+          <Blogs image={blog1image} tag="Marketing" date="Feb 4, 2020" title="From a small startup to a leading global agency in 10 Years."/>
+
+      <Blogs image={blog2image} tag="Finance" date="Feb 15, 2020" title="How google’s BERT algorithm affects your website traffic"/>
+
+      <Blogs image={blog3image} tag="Operations" date="Sep 19, 2020" title="Five reasons why you must create a website for your company"/>
+        </div>
       </div>
 
       <Footer />
